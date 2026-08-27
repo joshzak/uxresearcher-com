@@ -21,7 +21,8 @@
   <link rel="icon" href="/assets/images/logo/icon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" /></noscript>
   <link rel="stylesheet" href="/assets/css/main.css" />
 
   <script type="application/ld+json">
@@ -295,7 +296,7 @@
 
         <div class="grid grid--3">
           <div class="card">
-            <img src="/assets/images/icons/Icon - User Interviews.svg" alt="" class="card__icon" />
+            <img src="/assets/images/icons/Icon - User Interviews.svg" alt="" class="card__icon" loading="lazy" />
             <h3 class="card__title">User interviews</h3>
             <p class="card__body">
               One-on-one conversations, usually semi-structured. Ideal for understanding mental models, decision-making processes, context, and the "why" behind behavior. The most versatile qualitative method — and the one where facilitation quality varies most significantly.
@@ -303,7 +304,7 @@
           </div>
 
           <div class="card">
-            <img src="/assets/images/icons/Icon - Usability Testing.svg" alt="" class="card__icon" />
+            <img src="/assets/images/icons/Icon - Usability Testing.svg" alt="" class="card__icon" loading="lazy" />
             <h3 class="card__title">Usability testing</h3>
             <p class="card__body">
               Participants attempt real tasks with a product or prototype while a researcher observes. Reveals where users get stuck, what they misunderstand, and what the interface communicates vs. what it intends. Moderated (with a facilitator present) or unmoderated (self-directed with prompts).
@@ -311,7 +312,7 @@
           </div>
 
           <div class="card">
-            <img src="/assets/images/icons/Icon - Surveys.svg" alt="" class="card__icon" />
+            <img src="/assets/images/icons/Icon - Surveys.svg" alt="" class="card__icon" loading="lazy" />
             <h3 class="card__title">Surveys</h3>
             <p class="card__body">
               Structured questionnaires that generate quantitative data at scale. Useful for measuring satisfaction, collecting demographic breakdowns, validating qualitative findings across a larger sample, or tracking attitudinal changes over time. The quality of survey data depends heavily on question design.
@@ -340,7 +341,7 @@
           </div>
 
           <div class="card">
-            <img src="/assets/images/icons/Icon - Findings Reports.svg" alt="" class="card__icon" />
+            <img src="/assets/images/icons/Icon - Findings Reports.svg" alt="" class="card__icon" loading="lazy" />
             <h3 class="card__title">Analytics &amp; behavioral data</h3>
             <p class="card__body">
               Quantitative behavioral data from product analytics, clickstream analysis, funnel analysis, and session recordings. Answers what users do at scale — where they go, where they drop off, what they click, how frequently. Doesn't explain why, but raises the right questions for qualitative follow-up.
@@ -355,7 +356,7 @@
           </div>
 
           <div class="card">
-            <img src="/assets/images/icons/Icon - User Journeys.svg" alt="" class="card__icon" />
+            <img src="/assets/images/icons/Icon - User Journeys.svg" alt="" class="card__icon" loading="lazy" />
             <h3 class="card__title">Field studies &amp; contextual inquiry</h3>
             <p class="card__body">
               Observing users in their actual context — at their desks, in their homes, in the environment where they'd use the product. Uncovers the workarounds, the physical constraints, the environmental factors, and the real workflows that never surface in a lab or remote interview setting.

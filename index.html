@@ -21,8 +21,10 @@
   <link rel="icon" href="/assets/images/logo/icon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" /></noscript>
   <link rel="stylesheet" href="/assets/css/main.css" />
+  <link rel="preload" as="image" href="/assets/images/illustrations/header-image.webp" imagesrcset="/assets/images/illustrations/header-image-mobile.webp 420w, /assets/images/illustrations/header-image.webp 1506w" imagesizes="(max-width: 768px) 100vw, 580px" />
 
   <script type="application/ld+json">
   {
@@ -99,13 +101,21 @@
           </div>
 
           <div class="hero__image">
-            <img
-              src="/assets/images/illustrations/header-image.png"
-              alt="UX researchers at work"
-              width="580"
-              height="460"
-              loading="eager"
-            />
+            <picture>
+              <source
+                type="image/webp"
+                srcset="/assets/images/illustrations/header-image-mobile.webp 420w, /assets/images/illustrations/header-image.webp 1506w"
+                sizes="(max-width: 768px) 100vw, 580px"
+              />
+              <img
+                src="/assets/images/illustrations/header-image.png"
+                alt="UX researchers at work"
+                width="580"
+                height="460"
+                loading="eager"
+                fetchpriority="high"
+              />
+            </picture>
           </div>
         </div>
       </div>

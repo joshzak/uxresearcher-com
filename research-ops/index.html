@@ -21,7 +21,8 @@
   <link rel="icon" href="/assets/images/logo/icon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" /></noscript>
   <link rel="stylesheet" href="/assets/css/main.css" />
 
   <script type="application/ld+json">
@@ -178,7 +179,7 @@
 
         <div class="grid grid--3">
           <div class="card">
-            <img src="/assets/images/icons/Icon - Findings Reports.svg" alt="" class="card__icon" />
+            <img src="/assets/images/icons/Icon - Findings Reports.svg" alt="" class="card__icon" loading="lazy" />
             <h3 class="card__title">Research repositories</h3>
             <p class="card__body">
               Organizing, tagging, and making research findable — so insights don't die in slide decks. Choosing and implementing repository tooling. Building systems that let teams actually find and reuse past research. AI-powered search is now part of most modern repository implementations, dramatically improving retrieval.
@@ -186,7 +187,7 @@
           </div>
 
           <div class="card">
-            <img src="/assets/images/icons/Icon - Usability Testing.svg" alt="" class="card__icon" />
+            <img src="/assets/images/icons/Icon - Usability Testing.svg" alt="" class="card__icon" loading="lazy" />
             <h3 class="card__title">Participant recruitment operations</h3>
             <p class="card__body">
               Building participant panels, managing recruitment workflows, creating screeners, setting up consent and privacy processes, and reducing the overhead of finding the right people for every study. Recruitment friction is one of the highest-leverage problems ResearchOps solves.
@@ -194,7 +195,7 @@
           </div>
 
           <div class="card">
-            <img src="/assets/images/icons/Icon - User Journeys.svg" alt="" class="card__icon" />
+            <img src="/assets/images/icons/Icon - User Journeys.svg" alt="" class="card__icon" loading="lazy" />
             <h3 class="card__title">Research process &amp; governance</h3>
             <p class="card__body">
               Standardizing how research gets planned, prioritized, tracked, and handed off. Designing intake processes, research calendars, stakeholder communication norms, and ethics frameworks. Ensuring participant privacy and data governance are built into the workflow rather than bolted on.
