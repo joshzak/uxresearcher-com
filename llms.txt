@@ -1,0 +1,22 @@
+# UXResearcher.com
+
+UXResearcher.com is an independent practical resource about UX research — what it is, how it works, how organizations hire for it, and how the practice is evolving.
+
+The site is not affiliated with any agency, consultancy, or commercial research service. It exists to explain UX research clearly, for people who conduct it, hire for it, or want to understand it.
+
+## Key pages
+
+- Homepage: https://uxresearcher.com/
+- What is UX Research?: https://uxresearcher.com/ux-research/
+- What is a UX Researcher?: https://uxresearcher.com/ux-researcher/
+- ResearchOps: https://uxresearcher.com/research-ops/
+- Hiring UX Researchers: https://uxresearcher.com/hire/
+- Fractional UX Researcher: https://uxresearcher.com/hire/fractional/
+- UX Research Agency model: https://uxresearcher.com/agency/
+
+## Guides
+
+- How to Hire a UX Researcher: https://uxresearcher.com/insights/how-to-hire-a-ux-researcher/
+- How AI is Changing UX Research: https://uxresearcher.com/insights/how-ai-is-changing-ux-research/
+- How Much Does UX Research Cost?: https://uxresearcher.com/insights/how-much-does-ux-research-cost/
+- All guides: https://uxresearcher.com/insights/
