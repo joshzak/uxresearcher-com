@@ -87,13 +87,13 @@
       <div class="nav__actions">
         <a href="/jobs/" class="nav__researcher-link">For Researchers</a>
       </div>
-      <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+      <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-mobile-menu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
-  <div class="nav__mobile">
+  <div class="nav__mobile" id="nav-mobile-menu" aria-label="Mobile navigation">
     <a href="/agency/" class="nav__mobile-link">Agency</a>
     <a href="/hire/" class="nav__mobile-link">Hire</a>
     <a href="/research-ops/" class="nav__mobile-link">ResearchOps</a>
@@ -348,7 +348,7 @@
             </div>
 
             <div class="card" style="background:var(--color-purple-light); border-color:var(--color-border-purple);">
-              <div class="card__kicker" style="color:var(--color-purple);">Related resource</div>
+              <div class="card__kicker" style="color:var(--color-purple-text);">Related resource</div>
               <p style="font-size:var(--size-sm); color:var(--color-text-secondary); margin-bottom:var(--space-5); line-height:1.6;">For organizations building out research capacity — the hiring guide covers models, evaluation criteria, and what to look for.</p>
               <a href="/hire/" class="btn btn--primary btn--sm btn--full">Explore hiring options</a>
             </div>
@@ -428,7 +428,7 @@
     </div>
   </footer>
 
-  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/main.js" defer></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JBEYGD7EGC"></script>
 </body>
 </html>

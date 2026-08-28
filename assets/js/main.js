@@ -7,6 +7,14 @@
   const hamburger = document.querySelector('.nav__hamburger');
   const mobileNav = document.querySelector('.nav__mobile');
 
+  function closeMobileNav() {
+    mobileNav.classList.remove('is-open');
+    hamburger.classList.remove('is-active');
+    hamburger.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+    hamburger.focus();
+  }
+
   if (hamburger && mobileNav) {
     hamburger.addEventListener('click', function () {
       const isOpen = mobileNav.classList.toggle('is-open');
@@ -17,12 +25,14 @@
 
     // Close on link click
     mobileNav.querySelectorAll('a').forEach(function (link) {
-      link.addEventListener('click', function () {
-        mobileNav.classList.remove('is-open');
-        hamburger.classList.remove('is-active');
-        hamburger.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
-      });
+      link.addEventListener('click', closeMobileNav);
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && mobileNav.classList.contains('is-open')) {
+        closeMobileNav();
+      }
     });
   }
 
