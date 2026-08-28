@@ -22,5 +22,12 @@
         }
       ]
     }
+  ],
+  "redirects": [
+    {
+      "source": "/contact/",
+      "destination": "/hire/",
+      "permanent": true
+    }
   ]
 }
