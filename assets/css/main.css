@@ -14,12 +14,13 @@
   --color-bg-card:      #2D2547;
   --color-bg-light:     #FEFDEA;
   --color-purple:       #8A47FB;
+  --color-purple-text:   #A877FC;
   --color-purple-hover: #7535F0;
   --color-purple-light: rgba(138, 71, 251, 0.12);
   --color-purple-mid:   rgba(138, 71, 251, 0.3);
   --color-text-primary: #FEFDEA;
   --color-text-secondary: rgba(254, 253, 234, 0.65);
-  --color-text-muted:   rgba(254, 253, 234, 0.4);
+  --color-text-muted:   rgba(254, 253, 234, 0.60);
   --color-border:       rgba(254, 253, 234, 0.1);
   --color-border-purple: rgba(138, 71, 251, 0.35);
 
@@ -390,7 +391,7 @@ section {
 
 .btn--outline-purple {
   background-color: transparent;
-  color: var(--color-purple);
+  color: var(--color-purple-text);
   border: 2px solid var(--color-purple);
 }
 
@@ -467,7 +468,7 @@ section {
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--color-purple);
+  color: var(--color-purple-text);
   background-color: var(--color-purple-light);
   border: 1px solid var(--color-border-purple);
   border-radius: var(--radius-pill);
@@ -486,7 +487,7 @@ section {
 
 .hero__heading em {
   font-style: normal;
-  color: var(--color-purple);
+  color: var(--color-purple-text);
 }
 
 .hero__body {
@@ -584,7 +585,7 @@ section {
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--color-purple);
+  color: var(--color-purple-text);
   margin-bottom: var(--space-4);
 }
 
@@ -639,7 +640,7 @@ section {
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--color-purple);
+  color: var(--color-purple-text);
   margin-bottom: var(--space-3);
 }
 
@@ -661,7 +662,7 @@ section {
 .card__link {
   font-size: var(--size-sm);
   font-weight: 600;
-  color: var(--color-purple);
+  color: var(--color-purple-text);
   display: inline-flex;
   align-items: center;
   gap: var(--space-2);
@@ -754,7 +755,7 @@ section {
 .stat__number {
   font-size: var(--size-4xl);
   font-weight: 800;
-  color: var(--color-purple);
+  color: var(--color-purple-text);
   letter-spacing: -0.04em;
   line-height: 1;
   margin-bottom: var(--space-2);
@@ -799,7 +800,7 @@ section {
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--color-purple);
+  color: var(--color-purple-text);
   margin-bottom: var(--space-4);
 }
 
@@ -906,7 +907,7 @@ section {
 
 .tag--purple {
   background-color: var(--color-purple-light);
-  color: var(--color-purple);
+  color: var(--color-purple-text);
   border-color: var(--color-border-purple);
 }
 
@@ -990,7 +991,7 @@ section {
 .check-list__icon::after {
   content: '✓';
   font-size: 12px;
-  color: var(--color-purple);
+  color: var(--color-purple-text);
   font-weight: 700;
 }
 
@@ -1043,7 +1044,8 @@ section {
 .form-textarea:focus,
 .form-select:focus {
   border-color: var(--color-purple);
-  outline: none;
+  outline: 2px solid var(--color-purple);
+  outline-offset: 2px;
 }
 
 .form-input::placeholder,
@@ -1172,7 +1174,7 @@ section {
    19. UTILITY CLASSES
    ============================================================ */
 
-.text-purple { color: var(--color-purple); }
+.text-purple { color: var(--color-purple-text); }
 .text-muted  { color: var(--color-text-muted); }
 .text-secondary { color: var(--color-text-secondary); }
 
@@ -1257,7 +1259,7 @@ section {
   font-size: var(--size-xs);
   font-weight: 800;
   letter-spacing: 0.05em;
-  color: var(--color-purple);
+  color: var(--color-purple-text);
   display: block;
   margin-bottom: var(--space-4);
 }
@@ -1553,6 +1555,25 @@ section {
 /* ============================================================
    27. FOCUS / ACCESSIBILITY
    ============================================================ */
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: var(--space-4);
+  background: var(--color-bg-elevated);
+  color: var(--color-text-primary);
+  padding: var(--space-3) var(--space-5);
+  border-radius: var(--radius-base);
+  border: 2px solid var(--color-purple);
+  font-weight: 600;
+  font-size: var(--size-sm);
+  text-decoration: none;
+  z-index: 10000;
+  transition: top 0.1s;
+}
+.skip-link:focus {
+  top: var(--space-4);
+}
 
 :focus-visible {
   outline: 2px solid var(--color-purple);

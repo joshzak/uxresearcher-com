@@ -21,8 +21,8 @@
   <link rel="icon" href="/assets/images/logo/icon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" /></noscript>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" /></noscript>
   <link rel="stylesheet" href="/assets/css/main.css" />
 
   <script type="application/ld+json">
@@ -44,8 +44,10 @@
   </script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <nav class="nav" role="navigation" aria-label="Main navigation">
+  
+  <nav class="nav" aria-label="Main navigation">
     <div class="nav__inner">
       <a href="/" class="nav__logo" aria-label="UXResearcher home">
         <img src="/assets/images/logo/icon.svg" alt="" class="nav__logo-icon" width="34" height="19" />
@@ -78,7 +80,7 @@
     <a href="/jobs/" class="nav__mobile-link">For Researchers</a>
   </div>
 
-  <main>
+  <main id="main-content">
 
     <section class="hero hero--page">
       <div class="container">
@@ -185,7 +187,7 @@
         </div>
         <div class="footer__col">
           <div class="footer__col-title">Foundations</div>
-          <nav class="footer__links">
+          <nav class="footer__links" aria-label="Foundations">
             <a href="/ux-research/" class="footer__link">What is UX Research</a>
             <a href="/ux-researcher/" class="footer__link">What is a UX Researcher</a>
             <a href="/research-ops/" class="footer__link">ResearchOps</a>
@@ -193,7 +195,7 @@
         </div>
         <div class="footer__col">
           <div class="footer__col-title">Guides</div>
-          <nav class="footer__links">
+          <nav class="footer__links" aria-label="Guides">
             <a href="/insights/" class="footer__link">All Guides</a>
             <a href="/insights/how-to-hire-a-ux-researcher/" class="footer__link">How to Hire a UX Researcher</a>
             <a href="/insights/how-ai-is-changing-ux-research/" class="footer__link">AI &amp; UX Research</a>
@@ -201,7 +203,7 @@
         </div>
         <div class="footer__col">
           <div class="footer__col-title">Topics</div>
-          <nav class="footer__links">
+          <nav class="footer__links" aria-label="Topics">
             <a href="/agency/" class="footer__link">UX Research Agency</a>
             <a href="/hire/" class="footer__link">Hiring UX Researchers</a>
             <a href="/hire/fractional/" class="footer__link">Fractional Research</a>
