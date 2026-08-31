@@ -1225,6 +1225,15 @@ section {
   color: var(--color-text-muted);
 }
 
+.footer__copyright a {
+  color: inherit;
+  transition: color var(--transition-base);
+}
+
+.footer__copyright a:hover {
+  color: var(--color-text-primary);
+}
+
 .footer__bottom-links {
   display: flex;
   align-items: center;
