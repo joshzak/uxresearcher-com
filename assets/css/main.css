@@ -332,14 +332,20 @@ section {
 
 .nav__researcher-link {
   font-size: var(--size-xs);
-  font-weight: 500;
-  color: var(--color-text-muted);
-  transition: color var(--transition-base);
+  font-weight: 600;
+  color: var(--color-purple-text);
+  background-color: transparent;
+  border: 1px solid var(--color-purple);
+  border-radius: var(--radius-pill);
+  padding: var(--space-2) var(--space-4);
+  line-height: 1;
+  transition: color var(--transition-base), background-color var(--transition-base);
   white-space: nowrap;
 }
 
 .nav__researcher-link:hover {
-  color: var(--color-text-secondary);
+  color: var(--color-purple-text);
+  background-color: var(--color-purple-light);
 }
 
 /* Hamburger */
